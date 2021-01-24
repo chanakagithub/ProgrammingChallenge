@@ -20,3 +20,5 @@ Note: The backend API must be written using Flask (Python) or Express frameworks
 
 # Category wise random objects counts display (demo)
 [![Category wise random objects counts display](http://img.youtube.com/vi/RyBXHEdPs2s/0.jpg)](http://www.youtube.com/watch?v=RyBXHEdPs2s "Category wise random objects counts display")
+
+![Alt text](/images/open_api.png "Title")
