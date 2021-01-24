@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import axios from '../../axios'
-import { Button, Card, Container, Row, Col } from 'react-bootstrap'
+import axios from '../axios'
+import { Button, Container, Row, Col } from 'react-bootstrap'
 import CountItem from './CountItem'
 
 function Report() {
@@ -10,7 +10,7 @@ function Report() {
   const [alphanumerics_count, setalphanumerics_count] = useState('')
 
   const getReport = async () => {
-    const response = await axios.get('/report')
+    const response = await axios.get('/api/v1/report')
 
     setalphabetical_count('Alphabetical String: ' + response.data.alphabetical_count)
     setreal_numbers_count('Real Numbers: ' + response.data.real_numbers_count)
