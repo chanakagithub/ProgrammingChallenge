@@ -9,5 +9,5 @@ jobs:
       - name: "Checkout limistah:programming-challenge"
         uses: actions/checkout@v1
         with:
-          repository: "chanakagithub/ProgrammingChallange"
+          repository: "chanakagithub/ProgrammingChallenge"
           ref: "main"
