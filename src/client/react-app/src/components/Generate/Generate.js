@@ -5,14 +5,6 @@ import GenerateLogic from "./GenerateLogic";
 function Generate() {
 
   const {link, generateReport} = GenerateLogic()
-  // const [link, setlink] = useState('init')
-
-  // const generateReport = async () => {
-  //   setlink('')
-  //   const request = await axios.put('/report')
-  //   console.log(request.data)
-  //   setlink(request.data.link)
-  // }
 
   return (
     <Container>

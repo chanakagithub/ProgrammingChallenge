@@ -6,7 +6,8 @@ from .extensions import api
 
 def create_app():
     app = Flask(__name__)
-    cors = CORS(app, resources={r"/*": {"origins": "*"}})
+    
+    cors = CORS(app, resource={r"/*": {"origin": "*"}})
 
     api.init_app(app)
 
