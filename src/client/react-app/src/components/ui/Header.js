@@ -10,11 +10,11 @@ const Header = () => {
           <Jumbotron>
             <h1>Programming Challenge</h1>
             <p>
-              This is a simple React app with Flask (Python) backend,
-              Generate button will generate random .txt file and download link displayed after Generate button.
+              This is a simple React app with Flask (Python) backend.
+              Generate button will generate random .txt file and download link will be displayed below the Generate button.
               Download file is 2MB (2,097,152bytes) in size.
-              Report button will display random.txt file summery.
-              All the communication between frontend and backend done via Flask (Python) APIs.
+              Report button will display random object count category wise.
+              All the communication between frontend and backend is done via Flask (Python) APIs.
         </p>
           </Jumbotron>
         </Col>
