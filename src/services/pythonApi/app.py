@@ -1,4 +1,5 @@
 from flask import Flask, send_file
+from flask_cors import CORS
 from flask_restful import Resource, Api
 import random
 import string
@@ -8,6 +9,9 @@ import sys
 
 app = Flask(__name__)
 api = Api(app)
+CORS(app)
+
+cors = CORS(app, resource={r"/*":{"origin":"*"}})
 
 file_path = 'files/random.txt'
 file_max_size = 1024 * 1024 * 2  # 2MB
@@ -23,7 +27,7 @@ class Report(Resource):
         with open(file_path, 'w') as file:
             file.write(content)
 
-        return {'link': 'http://127.0.0.1:5000/report'}
+        return {'link': 'http://127.0.0.1:5000/download'}
 
     def get(self):
         with open(file_path, "r") as file:
@@ -32,7 +36,7 @@ class Report(Resource):
 
 class Download(Resource):
     def get(self):
-        return send_file(file_path, as_attachment=True)
+        return send_file(file_path, mimetype='.txt', cache_timeout=1, as_attachment=True)
 
 
 api.add_resource(Report, '/report')
@@ -46,7 +50,7 @@ def get_content():
     while content_size < file_max_size:
         available_size = file_max_size - content_size
         random_object = get_random_object(available_size)
-        content += separator + random_object
+        content += (separator if content != '' else '') + random_object
         content_size += len(random_object) + len(separator)
 
     return content
