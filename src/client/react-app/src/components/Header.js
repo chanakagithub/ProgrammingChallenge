@@ -1,6 +1,4 @@
-import React from 'react'
-import { Jumbotron } from 'react-bootstrap'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Jumbotron } from 'react-bootstrap'
 
 const Header = () => {
   return (

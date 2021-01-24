@@ -1,6 +1,6 @@
-import Header from './components/ui/Header'
-import Generate from './components/ui/Generate'
-import Report from './components/ui/Report'
+import Header from './components/Header'
+import Generate from './components/generate/Generate'
+import Report from './components/report/Report'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {

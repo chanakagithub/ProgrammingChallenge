@@ -1,16 +1,15 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import axios from '../../axios'
-import { Button, Card, Container, Row, Col } from 'react-bootstrap'
-import CountItem from './CountItem'
 
-function Report() {
+function ReportLogic() {
+
   const [alphabetical_count, setalphabetical_count] = useState('')
   const [real_numbers_count, setreal_numbers_count] = useState('')
   const [integers_count, setintegers_count] = useState('')
   const [alphanumerics_count, setalphanumerics_count] = useState('')
 
   const getReport = async () => {
-    const response = await axios.get('/report')
+    const response = await axios.get('/api/v1/report')
 
     setalphabetical_count('Alphabetical String: ' + response.data.alphabetical_count)
     setreal_numbers_count('Real Numbers: ' + response.data.real_numbers_count)
@@ -18,18 +17,7 @@ function Report() {
     setalphanumerics_count('Alphanumerics: ' + response.data.alphanumerics_count)
   }
 
-  return (
-    <Container>
-      <Row>
-        <Col><p><Button variant="primary" onClick={getReport}>Report</Button></p></Col>
-      </Row>
-
-      <CountItem count={alphabetical_count} />
-      <CountItem count={real_numbers_count} />
-      <CountItem count={integers_count} />
-      <CountItem count={alphanumerics_count} />
-    </Container>
-  )
+  return { alphabetical_count, real_numbers_count, integers_count, alphanumerics_count, getReport }
 }
 
-export default Report
+export default ReportLogic
