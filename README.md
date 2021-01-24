@@ -16,4 +16,4 @@ Note: The backend API must be written using Flask (Python) or Express frameworks
 [![Generating printable random objects](http://img.youtube.com/vi/Vk7DW5Rz3oY/0.jpg)](http://www.youtube.com/watch?v=Vk7DW5Rz3oY "Generating printable random objects")
 
 
-[![alt text](https://i9.ytimg.com/vi/Vk7DW5Rz3oY/mq2.jpg?sqp=COCvtYAG&rs=AOn4CLCIvYDYXBHgkNktARmXxNMqDQzO1w)](https://www.youtube.com/watch?v=Vk7DW5Rz3oY "title")
+[![Category wise random objects counts display](http://img.youtube.com/vi/RyBXHEdPs2s/0.jpg)](http://www.youtube.com/watch?v=RyBXHEdPs2s "Category wise random objects counts display")
