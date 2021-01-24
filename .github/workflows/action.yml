@@ -1,0 +1,13 @@
+name: "Programming Challenge Github Actions"
+ 
+on:
+  push:
+jobs:
+  deploy-programming-challenge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout chanakagithub:programming-challenge"
+        uses: actions/checkout@v1
+        with:
+          repository: "chanakagithub/ProgrammingChallenge"
+          ref: "main"
