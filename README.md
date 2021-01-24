@@ -13,4 +13,7 @@ nmarcysfa900jkifh  , 3.781, 2.11, ....
 
 Note: The backend API must be written using Flask (Python) or Express frameworks. All the communication between frontend and backend MUST be done via these APIs only.
 
+[![Generating printable random objects](http://img.youtube.com/vi/Vk7DW5Rz3oY/0.jpg)](http://www.youtube.com/watch?v=Vk7DW5Rz3oY "Generating printable random objects")
+
+
 [![alt text](https://i9.ytimg.com/vi/Vk7DW5Rz3oY/mq2.jpg?sqp=COCvtYAG&rs=AOn4CLCIvYDYXBHgkNktARmXxNMqDQzO1w)](https://www.youtube.com/watch?v=Vk7DW5Rz3oY "title")
