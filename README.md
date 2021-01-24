@@ -14,9 +14,9 @@ nmarcysfa900jkifh  , 3.781, 2.11, ....
 Note: The backend API must be written using Flask (Python) or Express frameworks. All the communication between frontend and backend MUST be done via these APIs only.
 
 
-# Generating printable random objects
+# Generating printable random objects (Demo)
 [![Generating printable random objects](http://img.youtube.com/vi/Vk7DW5Rz3oY/0.jpg)](http://www.youtube.com/watch?v=Vk7DW5Rz3oY "Generating printable random objects")
 
 
-# Category wise random objects counts display
+# Category wise random objects counts display (Demo)
 [![Category wise random objects counts display](http://img.youtube.com/vi/RyBXHEdPs2s/0.jpg)](http://www.youtube.com/watch?v=RyBXHEdPs2s "Category wise random objects counts display")
