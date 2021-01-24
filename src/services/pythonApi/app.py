@@ -6,14 +6,15 @@ import string
 import sys
 
 
-
 app = Flask(__name__)
 api = Api(app)
 CORS(app)
 
-cors = CORS(app, resource={r"/*":{"origin":"*"}})
+cors = CORS(app, resource={r"/*": {"origin": "*"}})
 
+base_uri = 'http://127.0.0.1:5000'
 file_path = 'files/random.txt'
+
 file_max_size = 1024 * 1024 * 2  # 2MB
 letters = string.ascii_lowercase
 str_max_length = 50
@@ -27,7 +28,7 @@ class Report(Resource):
         with open(file_path, 'w') as file:
             file.write(content)
 
-        return {'link': 'http://127.0.0.1:5000/download'}
+        return {'link': base_uri + '/download'}
 
     def get(self):
         with open(file_path, "r") as file:
