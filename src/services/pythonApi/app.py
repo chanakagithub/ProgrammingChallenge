@@ -5,6 +5,7 @@ import string
 import sys
 
 
+
 app = Flask(__name__)
 api = Api(app)
 
@@ -126,5 +127,5 @@ def get_content_summary(content):
             'alphanumerics_count': alphanumerics_count}
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
