@@ -2,12 +2,8 @@ from .config import Config
 import random
 import string
 
-# file_max_size = 1024 * 1024 * 2  # 2MB
-# letters = string.ascii_lowercase
-# str_max_length = 50
-# integer_max_size = len(str(sys.maxsize))
 
-
+# Generate content with 2MB in size
 def get_content():
     content_size = 0
     content = ''
@@ -21,6 +17,7 @@ def get_content():
     return content
 
 
+# Generate random object (Alphabetical/Real Numbers/Integers/Alphanumerics)
 def get_random_object(available_size):
     object_type = random.randrange(4)
     if object_type == 0:
@@ -33,6 +30,7 @@ def get_random_object(available_size):
         return get_random_alphanumerics(available_size)
 
 
+# Generate random Alphabetical object
 def get_random_alphabetical_strings(available_size):
     max_length = Config.str_max_length if available_size > Config.str_max_length else available_size
     length = random.randint(1, max_length)
@@ -40,6 +38,7 @@ def get_random_alphabetical_strings(available_size):
     return result_str
 
 
+# Generate random Real Numbers object
 def get_random_real_numbers(available_size):
     max_length = Config.integer_max_size if available_size > Config.integer_max_size else available_size
     max_length = random.randint(3, max_length+1)
@@ -51,6 +50,7 @@ def get_random_real_numbers(available_size):
     return result
 
 
+# Generate random Integers object
 def get_random_integers(available_size):
     max_length = Config.integer_max_size if available_size > Config.integer_max_size else available_size
     max_length = random.randint(1, max_length+1)
@@ -59,6 +59,7 @@ def get_random_integers(available_size):
     return result
 
 
+# Generate random Alphanumerics object
 def get_random_alphanumerics(available_size):
     max_length = Config.str_max_length if available_size > Config.str_max_length else available_size
     length = random.randint(1, max_length)
@@ -67,6 +68,7 @@ def get_random_alphanumerics(available_size):
     return result_str
 
 
+# Calculate object type count (Alphabetical/Real Numbers/Integers/Alphanumerics)
 def get_content_summary(content):
     items = content.split(',')
     alphabetical_count = 0
