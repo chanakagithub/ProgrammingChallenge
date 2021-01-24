@@ -13,6 +13,4 @@ nmarcysfa900jkifh  , 3.781, 2.11, ....
 
 Note: The backend API must be written using Flask (Python) or Express frameworks. All the communication between frontend and backend MUST be done via these APIs only.
 
-![Farmers Market Finder Demo](/gif/final_600d53e732cf9100949c3f4e_914132.gif)
-
-![Alt Text](https://www.kapwing.com/e/600d53e732cf9100949c3f4e)
+[![alt text](https://i9.ytimg.com/vi/Vk7DW5Rz3oY/mq2.jpg?sqp=COCvtYAG&rs=AOn4CLCIvYDYXBHgkNktARmXxNMqDQzO1w)](https://www.youtube.com/watch?v=Vk7DW5Rz3oY "title")
