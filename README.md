@@ -12,3 +12,5 @@ nmarcysfa900jkifh  , 3.781, 2.11, ....
  The output should be 2MB in size. Once file generation is done the output should be available as a link which can be then downloaded by clicking on it. Also, there should be a button on the page so by clicking on this button the total number of each random objects will be displayed.
 
 Note: The backend API must be written using Flask (Python) or Express frameworks. All the communication between frontend and backend MUST be done via these APIs only.
+
+<div style="height: 0; padding-bottom: calc(62.50%); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/600d53e732cf9100949c3f4e" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing" width="100%"></iframe></div><p style="font-size: 12px; text-align: right;">Content made on <a href="https://www.kapwing.com/videos/600d53e732cf9100949c3f4e" target="_blank" rel="noopener noreferrer">Kapwing</a></p>
