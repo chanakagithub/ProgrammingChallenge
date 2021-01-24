@@ -10,9 +10,6 @@ ns_report = api.namespace(
     'report', description='Random Object Generate operations')
 ns_download = api.namespace('download', description='File download operations')
 
-# base_uri = 'http://127.0.0.1:5000'
-# file_path = '../files/random.txt'
-
 
 @ns_report.route('/')
 class Report(Resource):
@@ -37,6 +34,7 @@ class Report(Resource):
 
 @ns_download.route('/')
 class Download(Resource):
+    
     @ns_report.response(200, 'Random object file')
     def get(self):
         '''Random object file download link'''
