@@ -6,15 +6,15 @@ import string
 # Generate content with 2MB in size
 def get_content():
     content_size = 0
-    content = ''
+    randomList = []
     separator = ','
     while content_size < Config.file_max_size:
         available_size = Config.file_max_size - content_size
         random_object = get_random_object(available_size)
-        content += (separator if content != '' else '') + random_object
+        randomList.append(random_object)
         content_size += len(random_object) + len(separator)
 
-    return content
+    return separator.join(map(str, randomList))
 
 
 # Generate random object (Alphabetical/Real Numbers/Integers/Alphanumerics)
